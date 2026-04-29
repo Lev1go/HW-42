@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            margin: 50px;
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            transition-property: background-color;
+        }
+
+        @keyframes circle {
+            0% {
+                transform: translate(0, 0);
+                background-color: violet;
+            }
+
+            25% {
+                transform: translate(0, 300px);
+                background-color: blueviolet;
+            }
+
+            50% {
+                transform: translate(300px, 300px);
+                background-color: darkmagenta;
+            }
+
+            75% {
+                transform: translate(300px, 0);
+                background-color: pink;
+            }
+
+            100% {
+                transform: translate(0, 0);
+                background-color: violet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box circle">
+        
+    </div>
+</body>
+</html>
